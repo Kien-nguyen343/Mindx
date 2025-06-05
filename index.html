@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nông Sản Xanh</title>
     <style>
-      body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; }
+      body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; margin: 0; }
       header { background-color: #047857; color: white; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-      nav a { margin: 0 0.5rem; color: white; text-decoration: none; }
+      nav { display: flex; align-items: center; gap: 1rem; }
+      nav a { color: white; text-decoration: none; font-weight: 500; }
       nav a:hover { text-decoration: underline; }
+      .search-box { margin-left: auto; }
+      .search-box input { padding: 0.4rem; border-radius: 4px; border: none; }
       .hero { background: white; padding: 3rem 1rem; text-align: center; }
       .hero h2 { color: #047857; font-size: 2.5rem; margin-bottom: 1rem; }
       .hero p { color: #4b5563; font-size: 1.125rem; margin-bottom: 1.5rem; }
@@ -28,6 +31,9 @@
       .contact button { background: #047857; color: white; padding: 0.75rem; border-radius: 0.375rem; border: none; cursor: pointer; }
       .contact button:hover { background: #065f46; }
       footer { background: #047857; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
+      .link-grid { max-width: 900px; margin: auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+      .link-grid a { background: #f3f4f6; padding: 1rem 1.5rem; border-radius: 0.5rem; text-decoration: none; color: #047857; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+      .link-grid a:hover { background: #e0f2f1; }
     </style>
   </head>
   <body>
@@ -36,9 +42,13 @@
         <h1 style="font-size: 1.5rem; font-weight: 700;">Nông Sản Xanh</h1>
         <nav>
           <a href="#">Trang chủ</a>
-          <a href="#products">Sản phẩm</a>
-          <a href="#about">Giới thiệu</a>
-          <a href="#contact">Liên hệ</a>
+          <a href="mùa.html">Theo mùa</a>
+          <a href="gioi.html">Giới thiệu</a>
+          <a href="vùng.html"> Theo vùng</a>
+          <a href="hỗ trợ.">Hỗ trợ</a>
+          <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm..." />
+          </div>
         </nav>
       </div>
     </header>
@@ -83,6 +93,8 @@
       <h3 class="section-title">Về chúng tôi</h3>
       <p style="max-width: 600px; margin: auto; text-align: center;">Nông Sản Xanh là hệ thống cung cấp nông phẩm trực tiếp từ người nông dân tới người tiêu dùng, đảm bảo sự tươi mới và chất lượng tốt nhất.</p>
     </section>
+
+  
 
     <section id="contact" class="section contact">
       <h3 class="section-title">Liên hệ với chúng tôi</h3>
